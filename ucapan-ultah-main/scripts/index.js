@@ -18,7 +18,7 @@ function validateForm() {
       showConfirmButton: false,
       timer: 1500,
     }).then(function () {
-      window.location.href = "birthday.html";
+      window.location.href = "/ucapan-ultah-main/birthday.html";
     });
   } else {
     Swal.fire({
