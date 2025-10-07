@@ -1,4 +1,24 @@
 // 'js/mian.js'
+window.addEventListener("load", () => {
+  Swal.fire({
+    title: "Mau sambil dengerin musik engga sayang ?",
+    // text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Mau",
+    cancelButtonText: "Gamau",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      document.querySelector(".song").play();
+      animationTimeline();
+    } else {
+      animationTimeline();
+    }
+  });
+});
+
 const audio = document.getElementById('myAudio');
 const toggleButton = document.getElementById('toggleButton');
 
